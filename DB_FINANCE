@@ -1,0 +1,61 @@
+-- MySQL Administrator dump 1.4
+--
+-- ------------------------------------------------------
+-- Server version	5.5.15
+
+
+/*!40101 SET @OLD_CHARACTER_SET_CLIENT=@@CHARACTER_SET_CLIENT */;
+/*!40101 SET @OLD_CHARACTER_SET_RESULTS=@@CHARACTER_SET_RESULTS */;
+/*!40101 SET @OLD_COLLATION_CONNECTION=@@COLLATION_CONNECTION */;
+/*!40101 SET NAMES utf8 */;
+
+/*!40014 SET @OLD_UNIQUE_CHECKS=@@UNIQUE_CHECKS, UNIQUE_CHECKS=0 */;
+/*!40014 SET @OLD_FOREIGN_KEY_CHECKS=@@FOREIGN_KEY_CHECKS, FOREIGN_KEY_CHECKS=0 */;
+/*!40101 SET @OLD_SQL_MODE=@@SQL_MODE, SQL_MODE='NO_AUTO_VALUE_ON_ZERO' */;
+
+
+--
+-- Create schema finance
+--
+
+CREATE DATABASE IF NOT EXISTS finance;
+USE finance;
+
+--
+-- Definition of table `enquiry`
+--
+
+DROP TABLE IF EXISTS `enquiry`;
+CREATE TABLE `enquiry` (
+  `cash_id` int(10) unsigned NOT NULL AUTO_INCREMENT,
+  `name` varchar(45) NOT NULL,
+  `mobile_no` int(10) unsigned NOT NULL,
+  `email_address` varchar(45) NOT NULL,
+  `address` varchar(45) NOT NULL,
+  `services` varchar(45) NOT NULL,
+  `company_name` varchar(45) NOT NULL,
+  `annual_income` int(10) unsigned NOT NULL,
+  `past_loan` varchar(45) NOT NULL,
+  `pan_card` int(10) unsigned NOT NULL,
+  PRIMARY KEY (`cash_id`)
+) ENGINE=InnoDB AUTO_INCREMENT=3 DEFAULT CHARSET=latin1;
+
+--
+-- Dumping data for table `enquiry`
+--
+
+/*!40000 ALTER TABLE `enquiry` DISABLE KEYS */;
+INSERT INTO `enquiry` (`cash_id`,`name`,`mobile_no`,`email_address`,`address`,`services`,`company_name`,`annual_income`,`past_loan`,`pan_card`) VALUES 
+ (1,'dadu',1236547,'asdfghjkl','lkjhgfdsa','self employe','vbnmkljgdd',123654,'yes',113654789);
+/*!40000 ALTER TABLE `enquiry` ENABLE KEYS */;
+
+
+
+
+/*!40101 SET SQL_MODE=@OLD_SQL_MODE */;
+/*!40014 SET FOREIGN_KEY_CHECKS=@OLD_FOREIGN_KEY_CHECKS */;
+/*!40014 SET UNIQUE_CHECKS=@OLD_UNIQUE_CHECKS */;
+/*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
+/*!40101 SET CHARACTER_SET_RESULTS=@OLD_CHARACTER_SET_RESULTS */;
+/*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;
+/*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
